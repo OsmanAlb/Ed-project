@@ -1,7 +1,8 @@
-import Form from './components/Form/Form'
-import FormRegister from './components/Form/FormRegister/FormRegister'
+
 import './index.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import FormRegister from "./pages/FormRegister/FormRegister"
+import Form from './pages/Form/Form'
 
 function App() {
   return (

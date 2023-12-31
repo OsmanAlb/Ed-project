@@ -1,5 +1,6 @@
-import FormLogo from "./FormLogo/FormLogo";
-import FormTitle from "./FormTitle/FormTitle";
+import FormLogo from "../../components/Form/FormLogo/FormLogo";
+import FormTitle from "../../components/Form/FormTitle/FormTitle";
+
 import "./Form.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";

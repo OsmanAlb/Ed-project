@@ -1,6 +1,6 @@
-import "./../Form.scss";
+import "./../Form/Form.scss";
 import { useState } from "react";
-import FormLogo from "../FormLogo/FormLogo";
+import FormLogo from "../../components/Form/FormLogo/FormLogo";
 import { Link } from "react-router-dom";
 import { useRef } from 'react';
 import { IMaskInput } from 'react-imask';
