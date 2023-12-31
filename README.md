@@ -10,5 +10,5 @@ Currently, two official plugins are available:
 Technologies which we are using:
 MERN:
 MongoDB; Express; React/Vite; NodeJs; 
-
+JS; 
 TailwindCSS; HTML; Figma
