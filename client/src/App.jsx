@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="min-h-screen min-w-[375px] flex justify-center">
-      {/* <ProfilePage /> */}
+      <ProfilePage />
       <HomePage />
     </div>
   );
