@@ -7,7 +7,7 @@ import { SearchIcon } from '../components/ui/icons/SearchIcon';
 
 const HomePage = () => {
   return (
-    <div className="w-[375px] p-[15px] overflow-hidden">
+    <div className="w-[375px]  overflow-hidden">
       <div className="flex justify-between">
         <h1 className="text-2xl leading-6">Hi, Christina</h1>
         <NotificationIcon />
