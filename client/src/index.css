@@ -3,5 +3,16 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background font-inter font-normal;
+  @apply bg-background font-inter font-normal text-xs leading-[22px];
+}
+
+.active-category {
+  border-bottom: 3px #4c6ed7 solid;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
