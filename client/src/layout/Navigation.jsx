@@ -19,6 +19,12 @@ export const Navigation = () => {
   const isCourses = currentRoute === '/courses';
   const isProfile = currentRoute === '/profile';
 
+  const navLinkClasses = (isActive) =>
+    classNames(
+      'w-[93px] h-[38px] flex justify-center items-center',
+      isActive ? 'text-accent translate-x-0' : 'translate-x-5'
+    );
+
   return (
     <nav
       className={classNames(
@@ -26,30 +32,18 @@ export const Navigation = () => {
         isVisible ? 'translate-y-0' : 'translate-y-full'
       )}
     >
-      <Link
-        to="/"
-        className={classNames(
-          'w-[93px] h-[38px] flex justify-center items-center transition-transform',
-          isHome ? 'text-accent translate-x-0' : 'translate-x-8'
-        )}
-      >
+      <Link to="/" className={navLinkClasses(isHome)}>
         {isHome ? <HomeIconActive /> : <HomeIcon />}
         <span
           className={classNames(
             'ml-[5px] transition-all',
-            isHome ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+            isHome ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'
           )}
         >
           Home
         </span>
       </Link>
-      <Link
-        to="/courses"
-        className={classNames(
-          'w-[93px] h-[38px] flex justify-center items-center',
-          isCourses ? 'text-accent translate-x-0' : 'translate-x-5'
-        )}
-      >
+      <Link to="/courses" className={navLinkClasses(isCourses)}>
         {isCourses ? <CourseIconActive /> : <CourseIcon />}
         <span
           className={classNames(
@@ -60,18 +54,12 @@ export const Navigation = () => {
           Courses
         </span>
       </Link>
-      <Link
-        to="/profile"
-        className={classNames(
-          'w-[93px] h-[38px] flex justify-center items-center',
-          isProfile ? 'text-accent translate-x-0' : 'translate-x-8'
-        )}
-      >
+      <Link to="/profile" className={navLinkClasses(isProfile)}>
         {isProfile ? <NavProfileIconActive /> : <NavProfileIcon />}
         <span
           className={classNames(
             'ml-[5px] transition-all',
-            isProfile ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+            isProfile ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'
           )}
         >
           Profile
