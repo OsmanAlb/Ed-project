@@ -11,7 +11,7 @@ import {
 
 const ProfilePage = () => {
   return (
-    <div className="flex pt-[50px] pb-[35px] flex-col items-center mx-4 font-normal">
+    <div className="flex pt-[10px] flex-col items-center font-normal">
       <div className="w-[100px] h-[100px] mb-[20px]">
         <img src="/src/assets/images/profile.png" alt="" />
       </div>
