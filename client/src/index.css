@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background font-inter font-normal text-xs leading-[22px];
+  @apply bg-[#e5e5e5] font-inter font-normal text-xs leading-[22px];
 }
 
 .active-category {
