@@ -15,7 +15,7 @@ export const ProgressBar = ({
     >
       <span
         style={{ width: `${percentage}%` }}
-        className="absolute left-0 h-full bg-accent"
+        className="absolute left-0 h-full rounded-[10px] bg-accent"
       ></span>
     </span>
   );
