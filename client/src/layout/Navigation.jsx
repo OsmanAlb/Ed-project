@@ -28,7 +28,7 @@ export const Navigation = () => {
   return (
     <nav
       className={classNames(
-        'sticky flex justify-between items-center gap-[16px] bottom-0 h-[68px] w-[375px] mx-auto px-[16px] bg-background border-t-2 border-gray-200/50 z-10 transition',
+        'sticky flex justify-between items-center gap-[16px] bottom-0 h-[68px] px-[16px] bg-background border-t-2 border-gray-200/50 z-10 transition',
         isVisible ? 'translate-y-0' : 'translate-y-full'
       )}
     >
