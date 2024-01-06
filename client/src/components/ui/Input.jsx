@@ -17,16 +17,22 @@ export const Input = ({
 		variant === 'register'
 			? 'border-b border-[#9D9B9B] bg-inherit p-[10px]'
 			: '',
+		variant === 'pay'
+			? 'border border-[#BDBDBD] rounded-md p-[10px]'
+			: '',
 		className
 	)
 
 	const inputClasses = classNames(
-		'bg-inherit outline-none',
+		'bg-inherit outline-none text-[#181818]',
 		variant === "search"
-			? 'text-12px leading-[22px] text-[#4F4F4F]'
+			? 'text-12px leading-[22px]'
 			: '',
 		variant === 'register'
-			? 'text-14px leading-[24px] text-[#181818]'
+			? 'text-14px leading-[24px]'
+			: '',
+		variant === 'pay'
+			? 'text-12px leading-[22px]'
 			: '',
 		className
 	);

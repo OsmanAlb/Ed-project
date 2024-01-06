@@ -19,7 +19,7 @@ const HomePage = () => {
       <p className="text-[#888888] text-sm leading-6 pb-[18px]">
         What do you want to learn today?
       </p>
-      <Input variant="search" placeholder="Search" value={post.title} onChange={e => setPost({ ...post, title: e.target.value })} type='text' />
+      <Input variant="pay" placeholder="Search" value={post.title} onChange={e => setPost({ ...post, title: e.target.value })} type='text' />
       <div className="mb-6">
         <h2 className="text-sm leading-6 mb-4">Recent learning</h2>
         <div className="flex gap-[10px] overflow-x-auto scrollbar-hide -mx-4 px-4">
