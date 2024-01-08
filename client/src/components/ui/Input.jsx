@@ -4,7 +4,6 @@ import { SearchIcon } from './icons/SearchIcon';
 
 export const Input = ({
 	className,
-	link,
 	variant = "search",
 	...props
 }) => {
@@ -37,13 +36,6 @@ export const Input = ({
 		className
 	);
 
-	if (link) {
-		return (
-			<Link to={link} className={inputClasses} {...props}>
-				{children}
-			</Link>
-		);
-	}
 
 	return (
 		<div className={divInputClasses}>
