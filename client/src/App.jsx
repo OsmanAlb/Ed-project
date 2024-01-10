@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
+import Courses from './components/Courses/Courses'
 import { Layout } from './layout/Layout'
 import HomePage from './pages/HomePage'
 import NotFoundPage from './pages/NotFoundPage'
 import OnBoardingPage from './pages/OnBoardingPage'
 import ProfilePage from './pages/ProfilePage'
+
 function App() {
   return (
     <>
@@ -11,10 +13,12 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path='/' element={<HomePage />} />
+            <Route path='/courses' element={<Courses />} />
             <Route path='/profile' element={<ProfilePage />} />
           </Route>
           <Route path='/on-boarding' element={<OnBoardingPage />} />
           <Route path='*' element={<NotFoundPage />} />
+
         </Routes>
       </div>
     </>

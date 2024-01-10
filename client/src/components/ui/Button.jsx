@@ -20,7 +20,7 @@ export const Button = ({
       ? 'bg-slate-500 hover:bg-slate-400 focus:ring-slate-300 text-white'
       : '',
     variant === 'third'
-      ? 'bg-[#FDFDFD] border-[#E0E0E0] text-[#333333] hover:bg-accent hover:text-white'
+      ? 'bg-[#FDFDFD] border-[#E0E0E0] text-[#333333] hover:bg-accent hover:text-white border-r-0'
       : '',
     variant === 'outline'
       ? 'text-accent  border-accent hover:bg-accent hover:text-white'
