@@ -2,6 +2,7 @@ import { CourseCard } from '../components/CourseCard'
 import { CourseCategory } from '../components/CourseCategory'
 import { NewsCard } from '../components/NewsCard'
 import { RecentCard } from '../components/RecentCard'
+import { CourseTabs } from '../components/CourseTabs'
 import { NotificationIcon } from '../components/ui/icons/NotificationIcon'
 import { SearchIcon } from '../components/ui/icons/SearchIcon'
 
@@ -30,18 +31,8 @@ const HomePage = () => {
 					<RecentCard />
 				</div>
 			</div>
-			<div className='mb-[30px]'>
-				<div className='flex mb-5'>
-					<CourseCategory name='Recommended' active />
-					<CourseCategory name='Algebra' />
-					<CourseCategory name='Geometry' />
-				</div>
-				<div className='flex gap-[15px] overflow-x-auto scrollbar-hide -mx-4 px-4'>
-					<CourseCard />
-					<CourseCard />
-					<CourseCard />
-				</div>
-			</div>
+			<CourseTabs />
+
 			<div className='flex justify-between mb-5'>
 				<h2 className='text-sm leading-6'>Last News</h2>
 				<p className='text-secondary'>See all</p>

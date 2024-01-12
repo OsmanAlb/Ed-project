@@ -1,8 +1,9 @@
 import { classNames } from '../utils/classNames'
 
-export const CourseCategory = ({ name, active }) => {
+export const CourseCategory = ({ name, active, onClick }) => {
 	return (
 		<h2
+			onClick={onClick}
 			className={classNames(
 				'w-[114px] text-sm leading-6 py-[15px] text-center cursor-pointer',
 				active ? 'active-category' : 'text-secondary'
