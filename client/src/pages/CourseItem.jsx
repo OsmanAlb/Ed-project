@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button } from '../components/ui/Button'
 import { ClockIcon } from '../components/ui/icons/ClockIcon'
 import { StudentsIcon } from '../components/ui/icons/StudentsIcon'
