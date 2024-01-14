@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
-import Courses from './components/Courses/Courses'
 import { Layout } from './layout/Layout'
+import Courses from './pages/Courses'
 import HomePage from './pages/HomePage'
 import NotFoundPage from './pages/NotFoundPage'
 import OnBoardingPage from './pages/OnBoardingPage'
