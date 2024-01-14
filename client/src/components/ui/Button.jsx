@@ -19,8 +19,11 @@ export const Button = ({
     variant === 'secondary'
       ? 'bg-slate-500 hover:bg-slate-400 focus:ring-slate-300 text-white'
       : '',
-    variant === 'third'
-      ? ' bg-[#FDFDFD] border-[#E0E0E0] text-[#333333] hover:bg-accent hover:text-white '
+    variant === 'third-left'
+      ? ' bg-[#FDFDFD] border-[#E0E0E0] text-[#333333] hover:bg-accent hover:text-white rounded-r-[0px] rounded-l-[6px]'
+      : '',
+      variant === 'third-right'
+      ? ' bg-[#FDFDFD] border-[#E0E0E0] text-[#333333] hover:bg-accent hover:text-white rounded-r-[6px] rounded-l-[0px]'
       : '',
     variant === 'outline'
       ? 'text-accent  border-accent hover:bg-accent hover:text-white'

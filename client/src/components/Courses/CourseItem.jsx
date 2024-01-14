@@ -5,7 +5,7 @@ import { StudentsIcon } from '../ui/icons/StudentsIcon'
 
 const CourseItem = () => {
 	return (
-		<div className="flex gap-[10px] overflow-x-auto scrollbar-hide mb-5 relative">
+		<div className="flex gap-[10px] overflow-x-auto scrollbar-hide relative">
 			<img className='w-[171px] h-[162px] rounded-md relative' src="/src/assets/images/course.png" alt="course" />
 			<button className='bg-[#FDFDFD] absolute m-2.5 rounded-[6px] text-accent px-[20px] py-[5px] text-[10px] font-semibold leading-[20px] text-center'>Biology</button>
 			<div className='flex flex-col'>
@@ -24,8 +24,8 @@ const CourseItem = () => {
 					</span>
 				</div>
 				<div className='flex absolute bottom-0'>
-					<Button className='rounded-r-[0px] rounded-l-[6px]' variant='third' size='middle'>View</Button>
-					<Button className='rounded-r-[6px] rounded-l-[0px]' variant='third' size='middle'>Discuss</Button>
+					<Button variant='third-left' size='middle'>View</Button>
+					<Button variant='third-right' size='middle'>Discuss</Button>
 				</div>
 			</div>
 		</div >
