@@ -1,19 +1,15 @@
-import { useState } from "react"
-import UploaderItem from "./UploaderItem"
+import { useState } from "react";
+import UploaderItem from "./UploaderItem";
 
 
 const Uploader = () => {
-	const [items, setItems] = useState(1)
-
-	function numberChange() {
-		setNumber(items => items + 1)
-	}
+	const [items, setItems] = useState([1, 2, 3, 4]);
 
 	return (
-		<div onChange={numberChange} className="flex flex-col gap-2.5">
-			{items.map((item, index) => {
-				<UploaderItem key={index} item={item}/>
-			})}
+		<div className="flex flex-col gap-2.5">
+			{items.map((item) => (
+        <UploaderItem number={item} />
+      ))}
 		</div>
 	)
 }
