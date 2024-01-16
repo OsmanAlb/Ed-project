@@ -2,6 +2,7 @@ import { CourseCard } from '../components/CourseCard'
 import { CourseCategory } from '../components/CourseCategory'
 import { NewsCard } from '../components/NewsCard'
 import { RecentCard } from '../components/RecentCard'
+import Uploader from '../components/Uploader'
 import { NotificationIcon } from '../components/ui/icons/NotificationIcon'
 import { SearchIcon } from '../components/ui/icons/SearchIcon'
 
@@ -50,6 +51,7 @@ const HomePage = () => {
 				<NewsCard />
 				<NewsCard />
 			</div>
+			<Uploader />
 		</div>
 	)
 }
