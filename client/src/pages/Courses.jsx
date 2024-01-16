@@ -1,4 +1,4 @@
-import CourseItem from './CourseItem'
+import CourseItem from './../components/CourseItem'
 
 const Courses = () => {
 	return (
