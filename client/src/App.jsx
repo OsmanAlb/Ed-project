@@ -5,24 +5,28 @@ import HomePage from './pages/HomePage'
 import NotFoundPage from './pages/NotFoundPage'
 import OnBoardingPage from './pages/OnBoardingPage'
 import ProfilePage from './pages/ProfilePage'
+import RegistrationPage from './pages/RegistrationPage'
 
 function App() {
-  return (
-    <>
-      <div className='min-h-screen min-w-[375px] max-w-screen sm:max-w-[375px] sm:mx-auto flex flex-col bg-background overflow-clip'>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/courses' element={<Courses />} />
-            <Route path='/profile' element={<ProfilePage />} />
-          </Route>
-          <Route path='/on-boarding' element={<OnBoardingPage />} />
-          <Route path='*' element={<NotFoundPage />} />
-
-        </Routes>
-      </div>
-    </>
-  )
+	return (
+		<>
+			<div className='min-h-screen min-w-[375px] max-w-screen sm:max-w-[375px] sm:mx-auto flex flex-col bg-background overflow-clip'>
+				<Routes>
+					<Route element={<Layout />}>
+						<Route path='/' element={<HomePage />} />
+						<Route path='/courses' element={<Courses />} />
+						<Route path='/profile' element={<ProfilePage />} />
+					</Route>
+					<Route path='/on-boarding' element={<OnBoardingPage />} />
+					<Route path='*' element={<NotFoundPage />} />
+					<Route
+						path='/registration'
+						element={<RegistrationPage />}
+					/>
+				</Routes>
+			</div>
+		</>
+	)
 }
 
 export default App
