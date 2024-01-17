@@ -8,7 +8,7 @@ function App() {
 	return (
 		<>
 			<div className='min-h-screen min-w-[375px] max-w-screen sm:max-w-[375px] sm:mx-auto flex flex-col bg-background overflow-clip'>
-			<Routes>
+			 <Routes>
 					<Route element={<Layout />}>
 						<Route path='/' element={<HomePage />} />
 						<Route path='/profile' element={<ProfilePage />} />
