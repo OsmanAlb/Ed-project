@@ -1,6 +1,6 @@
-import { Button } from './ui/Button'
-import { ClockIcon } from './ui/icons/ClockIcon'
-import { StudentsIcon } from './ui/icons/StudentsIcon'
+import { Button } from '../components/ui/Button'
+import { ClockIcon } from '../components/ui/icons/ClockIcon'
+import { StudentsIcon } from '../components/ui/icons/StudentsIcon'
 
 const CourseItem = () => {
 	return (

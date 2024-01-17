@@ -4,6 +4,8 @@ import HomePage from './pages/HomePage'
 import NotFoundPage from './pages/NotFoundPage'
 import OnBoardingPage from './pages/OnBoardingPage'
 import ProfilePage from './pages/ProfilePage'
+import QuizPage from './pages/QuizPage'
+
 function App() {
 	return (
 		<>
@@ -12,6 +14,7 @@ function App() {
 					<Route element={<Layout />}>
 						<Route path='/' element={<HomePage />} />
 						<Route path='/profile' element={<ProfilePage />} />
+						<Route path='/quiz' element={<QuizPage />} />
 					</Route>
 					<Route path='/on-boarding' element={<OnBoardingPage />} />
 					<Route path='*' element={<NotFoundPage />} />
