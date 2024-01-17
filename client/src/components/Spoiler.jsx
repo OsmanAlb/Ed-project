@@ -14,3 +14,4 @@ const Spoiler = ({ title, children, step }) => {
 }
 
 export default Spoiler
+
