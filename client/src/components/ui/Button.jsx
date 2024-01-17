@@ -19,6 +19,12 @@ export const Button = ({
     variant === 'secondary'
       ? 'bg-slate-500 hover:bg-slate-400 focus:ring-slate-300 text-white'
       : '',
+    variant === 'third-left'
+      ? ' bg-[#FDFDFD] border-[#E0E0E0] text-[#333333] hover:bg-accent hover:text-white rounded-r-[0px] rounded-l-[6px]'
+      : '',
+      variant === 'third-right'
+      ? ' bg-[#FDFDFD] border-[#E0E0E0] text-[#333333] hover:bg-accent hover:text-white rounded-r-[6px] rounded-l-[0px]'
+      : '',
     variant === 'outline'
       ? 'text-accent  border-accent hover:bg-accent hover:text-white'
       : '',
@@ -29,6 +35,7 @@ export const Button = ({
       ? 'text-secondary  border-none hover:brightness-50 hover:text-white'
       : '',
     size === 'default' ? 'px-[60px] py-[15px] text-[14px] leading-[24px]' : '',
+    size === 'middle' ? 'w-[81px] py-[9px] text-[12px] leading-[22px] ' : '',
     size === 'small' ? 'p-0 text-[12px] leading-[22px]' : '',
     className
   );
@@ -38,12 +45,12 @@ export const Button = ({
       <Link to={link} className={buttonClasses} {...props}>
         {children}
       </Link>
-    );
+    )
   }
 
   return (
     <button className={buttonClasses} {...props}>
       {children}
     </button>
-  );
-};
+  )
+}
