@@ -1,15 +1,11 @@
-import { ProfileInfoRow } from '../components/ProfileInfoRow'
+import { useState } from 'react'
+import { Badges } from '../components/Badges'
+import { ProfileInfo } from '../components/ProfileInfo'
 import { Button } from '../components/ui/Button'
-import {
-	MailIcon,
-	PasswordIcon,
-	PhoneIcon,
-	ProfileIcon,
-	CreditCardIcon,
-	PrivacyIcon
-} from '../components/ui/icons'
 
 const ProfilePage = () => {
+	const [activeTab, setActiveTab] = useState(0)
+
 	return (
 		<div className='flex pt-[10px] flex-col items-center font-normal'>
 			<div className='w-[100px] h-[100px] mb-[20px]'>
@@ -20,46 +16,21 @@ const ProfilePage = () => {
 				@angela.christina123
 			</p>
 			<div className='mb-[37px]'>
-				<Button>General</Button>
-				<Button variant='ghost-secondary'>Badges</Button>
+				<Button
+					onClick={() => setActiveTab(0)}
+					variant={activeTab === 0 ? 'primary' : 'ghost-secondary'}
+				>
+					General
+				</Button>
+				<Button
+					onClick={() => setActiveTab(1)}
+					variant={activeTab === 1 ? 'primary' : 'ghost-secondary'}
+				>
+					Badges
+				</Button>
 			</div>
-			<ProfileInfoRow
-				name='Name'
-				value='Christina Angela'
-				icon={<ProfileIcon />}
-			/>
-			<ProfileInfoRow
-				name='Email'
-				type='email'
-				value='christina.angela123@mail.com'
-				icon={<MailIcon />}
-			/>
-			<ProfileInfoRow
-				name='Password'
-				type='password'
-				safe
-				value='value'
-				icon={<PasswordIcon />}
-			/>
-			<ProfileInfoRow
-				name='Phone Number'
-				type='phone'
-				value='(684) 555-0102'
-				icon={<PhoneIcon />}
-			/>
-			<ProfileInfoRow
-				name='Payment'
-				safe
-				value='value'
-				icon={<CreditCardIcon />}
-			/>
-			<ProfileInfoRow
-				name='Privacy Policy'
-				safe
-				link
-				value='value'
-				icon={<PrivacyIcon />}
-			/>
+			{activeTab === 0 && <ProfileInfo />}
+			{activeTab === 1 && <Badges />}
 			<Button className='my-[35px]' variant='outline'>
 				Become Premium
 			</Button>
