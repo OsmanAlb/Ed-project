@@ -5,8 +5,10 @@ import NotFoundPage from './pages/NotFoundPage'
 import OnBoardingPage from './pages/OnBoardingPage'
 import ProfilePage from './pages/ProfilePage'
 import QuizPage from './pages/QuizPage'
+import ChatPage from './pages/ChatPage'
 import { RegistrationPage } from './pages/RegistrationPage'
 import LoginPage from './pages/LoginPage'
+
 
 function App() {
 	return (
@@ -17,6 +19,7 @@ function App() {
 						<Route path='/' element={<HomePage />} />
 						<Route path='/profile' element={<ProfilePage />} />
 						<Route path='/quiz' element={<QuizPage />} />
+						<Route path='/chat' element={<ChatPage />} />
 					</Route>
 					<Route
 						path='/registration'
