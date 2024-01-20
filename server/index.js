@@ -12,7 +12,7 @@ import { handleValidationErrors, checkAuth } from './utils/index.js';
 import { UserController, PostController } from './controllers/index.js';
 
 mongoose
-  .connect('mongodb+srv://OsmanAlb:********@cluster0.b3kf6kr.mongodb.net/?retryWrites=true&w=majority')//На месте 3ёх звёздочек должен быть пароль, напиши мне в тг @OsmanAlb и я скажу тебе его( ^ UwU ^ )
+  .connect('mongodb+srv://OsmanAlb:azazazA9@cluster0.b3kf6kr.mongodb.net/?retryWrites=true&w=majority')//На месте 3ёх звёздочек должен быть пароль, напиши мне в тг @OsmanAlb и я скажу тебе его( ^ UwU ^ )
   .then(() => console.log('DB ok'))
   .catch((err) => console.log('DB error', err));
 
