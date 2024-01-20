@@ -1,12 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import { Layout } from './layout/Layout'
+import CreateCourses from './pages/CreateCourses'
 import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
 import NotFoundPage from './pages/NotFoundPage'
 import OnBoardingPage from './pages/OnBoardingPage'
 import ProfilePage from './pages/ProfilePage'
 import QuizPage from './pages/QuizPage'
 import { RegistrationPage } from './pages/RegistrationPage'
-import LoginPage from './pages/LoginPage'
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 						<Route path='/' element={<HomePage />} />
 						<Route path='/profile' element={<ProfilePage />} />
 						<Route path='/quiz' element={<QuizPage />} />
+						<Route path='/create' element={<CreateCourses />} />
 					</Route>
 					<Route
 						path='/registration'
