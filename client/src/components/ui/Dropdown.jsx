@@ -36,7 +36,6 @@ const Dropdown = ({
 
 	return (
 		<div className='flex flex-col'> 
-		{/* ///убрала gap - 10px, иначе по верстке едет */}
 			<div className='label text-[12px] text-[#181818] leading-[22px]'>
 				{label}
 			</div>
