@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useRef, useState } from 'react'
 import { DropdownIcon } from '../ui/icons/DropdownIcon'
 
 const Dropdown = ({
@@ -35,7 +35,8 @@ const Dropdown = ({
 	document.body.addEventListener('click', closeDropdown)
 
 	return (
-		<div className='flex flex-col gap-[10px]'>
+		<div className='flex flex-col'> 
+		{/* ///убрала gap - 10px, иначе по верстке едет */}
 			<div className='label text-[12px] text-[#181818] leading-[22px]'>
 				{label}
 			</div>
