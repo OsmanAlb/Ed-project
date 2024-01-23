@@ -7,8 +7,8 @@ const Uploader = () => {
 
 	return (
 		<div className="flex flex-col gap-2.5">
-			{items.map((item) => (
-        <UploaderItem number={item} />
+			{items.map((item, index) => (
+        <UploaderItem number={item} key={index} />
       ))}
 		</div>
 	)
