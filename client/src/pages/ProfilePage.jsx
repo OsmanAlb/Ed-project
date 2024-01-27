@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ProfileInfoRow } from '../components/ProfileInfoRow'
 import { Button } from '../components/ui/Button'
 import {
@@ -68,7 +69,7 @@ const ProfilePage = () => {
 				size='small'
 				variant='ghost-primary'
 			>
-				LOG OUT
+				<Link to='/login'>LOG OUT</Link>
 			</Button>
 		</div>
 	)
