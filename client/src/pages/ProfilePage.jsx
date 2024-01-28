@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Badges } from '../components/Badges'
 import { ProfileInfo } from '../components/ProfileInfo'
+import { Link } from 'react-router-dom'
+import { ProfileInfoRow } from '../components/ProfileInfoRow'
 import { Button } from '../components/ui/Button'
 
 const ProfilePage = () => {
@@ -39,7 +41,7 @@ const ProfilePage = () => {
 				size='small'
 				variant='ghost-primary'
 			>
-				LOG OUT
+				<Link to='/login'>LOG OUT</Link>
 			</Button>
 		</div>
 	)
