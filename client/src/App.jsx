@@ -14,7 +14,7 @@ import CreateCourses from './pages/CreateCourses'
 function App() {
 	return (
 		<>
-			<div className='min-h-screen min-w-[375px] max-w-screen sm:max-w-[375px] sm:mx-auto flex flex-col bg-background overflow-clip'>
+			<div className='min-h-screen min-w-[375px] min-[320px]:mx-auto min-[320px]:max-w-[320px] max-w-screen sm:max-w-[375px] flex flex-col bg-background overflow-clip'>
 				<Routes>
 					<Route element={<Layout />}>
 						<Route path='/' element={<HomePage />} />

@@ -11,7 +11,7 @@ export const Button = ({
 	...props
 }) => {
 	const buttonClasses = classNames(
-		'cursor-pointer select-none border-[1px] border-transparent [outline:none] transition duration-500',
+		'cursor-pointer select-none border-[1px] [outline:none] transition duration-500',
 		rounded ? 'rounded-[6px]' : '',
 		variant === 'primary'
 			? 'bg-accent border-accent hover:brightness-125 text-white'
