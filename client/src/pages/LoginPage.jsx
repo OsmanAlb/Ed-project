@@ -4,44 +4,24 @@ import { Button } from '../components/ui/Button'
 import { EyeSlashIcon } from '../components/ui/icons/EyeSlashIcon'
 import { LogoIcon } from '../components/ui/icons/LogoIcon'
 import { useRef } from 'react'
+import { useForm } from 'react-hook-form'
 
 const LoginPage = () => {
-	const [email, setEmail] = useState('')
-	const [password, setPassword] = useState('')
+	const {
+		register,
+		handleSubmit,
+		watch,
+		formState: { errors }
+	} = useForm({
+		mode: 'onBlur'
+	})
+
+	const spanEmailRef = useRef()
+	const spanPasswordRef = useRef()
 	const [isShow, setIsShow] = useState(false)
 
-	const inputEmailRef = useRef()
-	const spanEmailRef = useRef()
-	const inputPasswordRef = useRef()
-	const spanPasswordRef = useRef()
-
-	const handleFocusEmail = () => {
-		spanEmailRef.current.style.top = '-18px'
-		spanEmailRef.current.style.fontSize = '10px'
-	}
-	const handleEmailBlur = () => {
-		if (inputEmailRef.current.value === '') {
-			spanEmailRef.current.style.top = '0'
-			spanEmailRef.current.style.fontSize = '14px'
-		}
-	}
-	const handleFocusPassword = () => {
-		spanPasswordRef.current.style.top = '-18px'
-		spanPasswordRef.current.style.fontSize = '10px'
-	}
-	const handlePasswordBlur = () => {
-		if (inputPasswordRef.current.value === '') {
-			spanPasswordRef.current.style.top = '0'
-			spanPasswordRef.current.style.fontSize = '14px'
-		}
-	}
-
-	const handleSubmit = e => {
-		e.preventDefault()
-		console.log('Form submitted with data:', {
-			email,
-			password
-		})
+	const submitData = data => {
+		console.log(data)
 	}
 
 	return (
@@ -57,7 +37,7 @@ const LoginPage = () => {
 					Welcome Back, <br /> Angela Christina
 				</h2>
 			</div>
-			<form onSubmit={handleSubmit}>
+			<form onSubmit={handleSubmit(submitData)}>
 				<div className='block text-center bg-inherit bottom-0 h-full'>
 					<div className='text-center shadow-[0px_-4px_50px_0px_rgba(0,0,0,0.09)] px-[16px] h-full pb-[20px] rounded-[40px_40px_0_0]'>
 						<h2 className=' text-[#181818] pt-[57px] mb-[25px] font-inter text-[18px] tracking-wide font-medium text-start'>
@@ -66,15 +46,29 @@ const LoginPage = () => {
 						<div className='relative'>
 							<label>
 								<input
-									required
-									ref={inputEmailRef}
-									onFocus={handleFocusEmail}
-									onBlur={handleEmailBlur}
-									className='block w-full border-b border-[#9D9B9B] bg-inherit p-[8px] font-inter placeholder:text-[14px] focus:outline-none'
+									{...register('email', {
+										required: 'Email is required!'
+									})}
+									className='block w-full border-b border-[#9D9B9B] bg-inherit p-[8px] font-inter focus:outline-none mb-[10px]'
 									type='email'
-									value={email}
-									onChange={e => setEmail(e.target.value)}
+									onFocus={() => {
+										spanEmailRef.current.style.top = '-18px'
+										spanEmailRef.current.style.fontSize =
+											'10px'
+									}}
+									onBlur={() => {
+										const emailValue = watch('email')
+										if (emailValue === '') {
+											spanEmailRef.current.style.top =
+												'6px'
+											spanEmailRef.current.style.fontSize =
+												'14px'
+										}
+									}}
 								/>
+								<span className='text-[red] mt-[10px]'>
+									{errors?.email?.message}
+								</span>
 								<span
 									ref={spanEmailRef}
 									className='absolute top-0 left-[8px] font-medium transition-all ease-in-out text-[14px] text-[#181818]'
@@ -87,17 +81,36 @@ const LoginPage = () => {
 							<div className='relative'>
 								<label>
 									<input
-										required
-										ref={inputPasswordRef}
-										onFocus={handleFocusPassword}
-										onBlur={handlePasswordBlur}
-										value={password}
-										onChange={e =>
-											setPassword(e.target.value)
-										}
-										className='block w-full border-b border-[#9D9B9B] bg-inherit p-[8px] font-inter mt-[36px] mb-[10px] focus:outline-none placeholder:text-[14px]'
+										{...register('password', {
+											required: 'Password is required!',
+											minLength: {
+												value: 6,
+												message:
+													'Password must be at least 6 characters long!'
+											}
+										})}
+										onFocus={() => {
+											spanPasswordRef.current.style.top =
+												'-18px'
+											spanPasswordRef.current.style.fontSize =
+												'10px'
+										}}
+										onBlur={() => {
+											const passwordValue =
+												watch('password')
+											if (passwordValue === '') {
+												spanPasswordRef.current.style.top =
+													'6px'
+												spanPasswordRef.current.style.fontSize =
+													'14px'
+											}
+										}}
+										className='block w-full border-b border-[#9D9B9B] bg-inherit p-[8px] font-inter mt-[36px] mb-[10px] focus:outline-none'
 										type={isShow ? 'text' : 'password'}
 									/>
+									<span className='text-[red]'>
+										{errors?.password?.message}
+									</span>
 									<span
 										ref={spanPasswordRef}
 										className='top-[0] absolute left-[8px] font-medium transition-all ease-in-out  text-[14px] text-[#181818]'
@@ -106,12 +119,6 @@ const LoginPage = () => {
 									</span>
 								</label>
 								<Button
-									ref={inputPasswordRef}
-									onFocus={() => {
-										inputPasswordRef.current.value === '' &&
-											handleFocusPassword
-									}}
-									onBlur={handlePasswordBlur}
 									className='inline absolute top-[25%] right-[8px]'
 									type='button'
 									onClick={() => setIsShow(prev => !prev)}
@@ -125,9 +132,7 @@ const LoginPage = () => {
 								</span>
 							</div>
 							<div>
-								<Button className='w-[285px]' type='submit'>
-									Login
-								</Button>
+								<Button className='w-[285px]'>Login</Button>
 								<span className='block text-center mt-[25px] text-#181818 text-[12px] font-semibold'>
 									Don’ have an account?{' '}
 									<Link
