@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+	content: ['index.html', 'src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
 			fontFamily: {
@@ -8,7 +8,7 @@ export default {
 				lilitaOne: 'Lilita One'
 			},
 			colors: {
-				background: '#f9f9f9',
+				background: '#F9F9F9',
 				accent: '#4C6ED7',
 				secondary: '#4F4F4F'
 			}
