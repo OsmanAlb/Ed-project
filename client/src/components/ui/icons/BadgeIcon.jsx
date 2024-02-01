@@ -7,7 +7,7 @@ export const BadgeIcon = () => {
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 		>
-			<g clip-path='url(#clip0_93_941)'>
+			<g clipPath='url(#clip0_93_941)'>
 				<path
 					d='M6.04993 5.7751H9.98743L13.7374 -0.274902H9.79993L6.04993 5.7751Z'
 					fill='url(#paint0_linear_93_941)'
@@ -133,8 +133,8 @@ export const BadgeIcon = () => {
 					y2='6.13547'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop offset='0.185' stop-color='#1E88E5' />
-					<stop offset='0.806' stop-color='#1565C0' />
+					<stop offset='0.185' stopColor='#1E88E5' />
+					<stop offset='0.806' stopColor='#1565C0' />
 				</linearGradient>
 				<linearGradient
 					id='paint1_linear_93_941'
@@ -144,8 +144,8 @@ export const BadgeIcon = () => {
 					y2='5.9874'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop offset='0.461' stop-color='#EEEEEE' />
-					<stop offset='1' stop-color='#BDBDBD' />
+					<stop offset='0.461' stopColor='#EEEEEE' />
+					<stop offset='1' stopColor='#BDBDBD' />
 				</linearGradient>
 				<linearGradient
 					id='paint2_linear_93_941'
@@ -155,8 +155,8 @@ export const BadgeIcon = () => {
 					y2='5.60053'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop offset='0.257' stop-color='#E53935' />
-					<stop offset='0.886' stop-color='#C62828' />
+					<stop offset='0.257' stopColor='#E53935' />
+					<stop offset='0.886' stopColor='#C62828' />
 				</linearGradient>
 				<linearGradient
 					id='paint3_linear_93_941'
@@ -166,8 +166,8 @@ export const BadgeIcon = () => {
 					y2='6.13597'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop offset='0.136' stop-color='#64B5F6' />
-					<stop offset='0.946' stop-color='#2196F3' />
+					<stop offset='0.136' stopColor='#64B5F6' />
+					<stop offset='0.946' stopColor='#2196F3' />
 				</linearGradient>
 				<linearGradient
 					id='paint4_linear_93_941'
@@ -177,8 +177,8 @@ export const BadgeIcon = () => {
 					y2='5.43628'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop offset='0.21' stop-color='#FAFAFA' />
-					<stop offset='0.774' stop-color='#E0E0E0' />
+					<stop offset='0.21' stopColor='#FAFAFA' />
+					<stop offset='0.774' stopColor='#E0E0E0' />
 				</linearGradient>
 				<linearGradient
 					id='paint5_linear_93_941'
@@ -188,8 +188,8 @@ export const BadgeIcon = () => {
 					y2='5.60265'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop offset='0.258' stop-color='#EF5350' />
-					<stop offset='0.89' stop-color='#E53935' />
+					<stop offset='0.258' stopColor='#EF5350' />
+					<stop offset='0.89' stopColor='#E53935' />
 				</linearGradient>
 				<radialGradient
 					id='paint6_radial_93_941'
@@ -199,8 +199,8 @@ export const BadgeIcon = () => {
 					gradientUnits='userSpaceOnUse'
 					gradientTransform='translate(5.375 7.1875) scale(9.07212)'
 				>
-					<stop offset='0.297' stop-color='#FFEB3B' />
-					<stop offset='0.954' stop-color='#FBC02D' />
+					<stop offset='0.297' stopColor='#FFEB3B' />
+					<stop offset='0.954' stopColor='#FBC02D' />
 				</radialGradient>
 				<radialGradient
 					id='paint7_radial_93_941'
@@ -210,8 +210,8 @@ export const BadgeIcon = () => {
 					gradientUnits='userSpaceOnUse'
 					gradientTransform='translate(6.25261 7.66332) scale(6.808)'
 				>
-					<stop offset='0.098' stop-color='#FDD835' />
-					<stop offset='0.951' stop-color='#F9A825' />
+					<stop offset='0.098' stopColor='#FDD835' />
+					<stop offset='0.951' stopColor='#F9A825' />
 				</radialGradient>
 				<radialGradient
 					id='paint8_radial_93_941'
@@ -221,8 +221,8 @@ export const BadgeIcon = () => {
 					gradientUnits='userSpaceOnUse'
 					gradientTransform='translate(6.25257 7.66322) scale(6.808 6.808)'
 				>
-					<stop offset='0.098' stop-color='#FDD835' />
-					<stop offset='0.951' stop-color='#F9A825' />
+					<stop offset='0.098' stopColor='#FDD835' />
+					<stop offset='0.951' stopColor='#F9A825' />
 				</radialGradient>
 				<radialGradient
 					id='paint9_radial_93_941'
@@ -232,8 +232,8 @@ export const BadgeIcon = () => {
 					gradientUnits='userSpaceOnUse'
 					gradientTransform='translate(6.25257 7.66342) scale(6.808 6.808)'
 				>
-					<stop offset='0.098' stop-color='#FDD835' />
-					<stop offset='0.951' stop-color='#F9A825' />
+					<stop offset='0.098' stopColor='#FDD835' />
+					<stop offset='0.951' stopColor='#F9A825' />
 				</radialGradient>
 				<radialGradient
 					id='paint10_radial_93_941'
@@ -243,8 +243,8 @@ export const BadgeIcon = () => {
 					gradientUnits='userSpaceOnUse'
 					gradientTransform='translate(6.25261 7.66342) scale(6.80801 6.808)'
 				>
-					<stop offset='0.098' stop-color='#FDD835' />
-					<stop offset='0.951' stop-color='#F9A825' />
+					<stop offset='0.098' stopColor='#FDD835' />
+					<stop offset='0.951' stopColor='#F9A825' />
 				</radialGradient>
 				<radialGradient
 					id='paint11_radial_93_941'
@@ -254,8 +254,8 @@ export const BadgeIcon = () => {
 					gradientUnits='userSpaceOnUse'
 					gradientTransform='translate(6.2525 7.66322) scale(6.808)'
 				>
-					<stop offset='0.098' stop-color='#FDD835' />
-					<stop offset='0.951' stop-color='#F9A825' />
+					<stop offset='0.098' stopColor='#FDD835' />
+					<stop offset='0.951' stopColor='#F9A825' />
 				</radialGradient>
 				<clipPath id='clip0_93_941'>
 					<rect width='16' height='16' fill='white' />
