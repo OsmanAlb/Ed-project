@@ -6,8 +6,8 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"lint:jsx": "eslint src/**/*.{js,jsx} --report-unused-disable-directives --max-warnings 0"
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.3.4",
